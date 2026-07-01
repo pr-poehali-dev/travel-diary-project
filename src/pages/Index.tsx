@@ -25,8 +25,6 @@ const Index = () => {
           <p className="font-hand text-2xl text-sage mb-2">мой личный</p>
           <h1 className="font-display text-6xl md:text-7xl font-semibold text-foreground leading-tight text-balance">
             Дневник путешествий
-            <br />
-            <span className="text-gold">и мечтаний</span>
           </h1>
           <p className="text-muted-foreground mt-5 max-w-xl mx-auto leading-relaxed">
             Карта мест, где я побывала, и стран, куда однажды обязательно поеду.
