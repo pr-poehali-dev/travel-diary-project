@@ -43,7 +43,7 @@ const Index = () => {
 
       {/* Map */}
       <section className="px-4 mb-20">
-        <WorldMap trips={trips} />
+        <WorldMap trips={trips} onAddMarker={addTrip} />
       </section>
 
       {/* Visited */}

@@ -1,6 +1,20 @@
+@import "leaflet/dist/leaflet.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.leaflet-container {
+  font-family: "Golos Text", sans-serif;
+  border-radius: 2rem;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem;
+}
+.travel-marker {
+  background: transparent;
+  border: none;
+}
 
 @layer base {
   :root {

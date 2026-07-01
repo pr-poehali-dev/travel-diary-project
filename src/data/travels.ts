@@ -10,6 +10,8 @@ export interface Trip {
   note: string;
   impressions: string[];
   status: TripStatus;
+  lat?: number;
+  lng?: number;
 }
 
 export interface Checklist {
@@ -33,6 +35,8 @@ export const initialTrips: Trip[] = [
     note: 'Остров чая, слонов и бесконечных пляжей. Каждое утро начиналось с манго и звука океана.',
     impressions: ['Сафари в национальном парке Яла', 'Поезд сквозь чайные плантации', 'Закат на форте Галле'],
     status: 'visited',
+    lat: 6.0329,
+    lng: 80.217,
   },
   {
     id: 'tr',
@@ -44,6 +48,8 @@ export const initialTrips: Trip[] = [
     note: 'Волшебная страна воздушных шаров и лунных пейзажей. Проснулась до рассвета — и не пожалела.',
     impressions: ['Полёт на воздушном шаре', 'Пещерный отель', 'Турецкий завтрак с видом на долину'],
     status: 'visited',
+    lat: 38.6431,
+    lng: 34.8289,
   },
   {
     id: 'mx',
@@ -55,6 +61,8 @@ export const initialTrips: Trip[] = [
     note: 'Пирамиды майя, сеноты с бирюзовой водой и тако на каждом углу. Хочу встретить там Новый год.',
     impressions: ['Сеноты Юкатана', 'Руины Чичен-Ицы', 'Пляжи Тулума'],
     status: 'planned',
+    lat: 20.2114,
+    lng: -87.4654,
   },
   {
     id: 'no',
@@ -66,6 +74,8 @@ export const initialTrips: Trip[] = [
     note: 'Северное сияние, фьорды и уютные домики в снегу. Главная мечта — увидеть аврору своими глазами.',
     impressions: ['Северное сияние', 'Круиз по фьордам', 'Катание на собачьих упряжках'],
     status: 'planned',
+    lat: 69.6492,
+    lng: 18.9553,
   },
 ];
 
