@@ -105,7 +105,7 @@ const TripCard = ({ trip, index, onDelete, onEdit }: Props) => {
           <p className="text-muted-foreground leading-relaxed font-hand text-xl">{trip.note}</p>
 
           <div className="space-y-2 pt-1">
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">Три впечатления</p>
+            <p className={`text-xs uppercase tracking-wider font-semibold ${accent}`}>Три впечатления</p>
             {trip.impressions.map((imp, i) => (
               <div key={i} className="flex items-start gap-2 text-sm">
                 <Icon name="Sparkles" size={15} className={`mt-0.5 shrink-0 ${accent}`} />
