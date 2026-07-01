@@ -102,7 +102,7 @@ const TripCard = ({ trip, index, onDelete, onEdit }: Props) => {
             {trip.date}
           </div>
 
-          <p className="text-muted-foreground text-sm leading-relaxed font-hand text-lg">{trip.note}</p>
+          <p className="text-muted-foreground leading-relaxed font-hand text-xl">{trip.note}</p>
 
           <div className="space-y-2 pt-1">
             <p className="text-xs uppercase tracking-wider text-muted-foreground/70">Три впечатления</p>
