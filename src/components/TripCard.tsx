@@ -117,7 +117,7 @@ const TripCard = ({ trip, index, onDelete, onEdit }: Props) => {
           {!isVisited && (
             <Button
               onClick={handleGenerate}
-              className="w-full mt-2 bg-gold hover:bg-gold/90 text-[hsl(30_25%_20%)] rounded-full font-semibold"
+              className="w-full mt-2 bg-gold hover:bg-amber-500 active:bg-amber-600 text-[hsl(30_25%_20%)] rounded-full font-semibold transition-colors duration-150"
             >
               <Icon name="ListChecks" size={18} className="mr-1" />
               Сгенерировать чек-лист

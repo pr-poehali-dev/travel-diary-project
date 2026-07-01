@@ -24,7 +24,7 @@ const Index = () => {
         <div className="absolute bottom-8 left-[18%] text-4xl opacity-20 animate-float" style={{ animationDelay: '3s' }}>🗺️</div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10 animate-fade-in opacity-0">
-          <p className="font-hand text-2xl text-sage mb-2">мой личный</p>
+          <p className="font-hand text-4xl text-sage mb-2">мой личный</p>
           <h1 className="font-display text-6xl md:text-7xl font-semibold text-gold leading-tight text-balance">
             Дневник путешествий
           </h1>
