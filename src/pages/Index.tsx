@@ -12,6 +12,8 @@ const Index = () => {
   const planned = trips.filter((t) => t.status === 'planned');
 
   const addTrip = (t: Trip) => setTrips((prev) => [...prev, t]);
+  const deleteTrip = (id: string) => setTrips((prev) => prev.filter((t) => t.id !== id));
+  const editTrip = (updated: Trip) => setTrips((prev) => prev.map((t) => (t.id === updated.id ? updated : t)));
 
   return (
     <div className="min-h-screen pb-24">
@@ -54,7 +56,7 @@ const Index = () => {
       >
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {visited.map((t, i) => (
-            <TripCard key={t.id} trip={t} index={i} />
+            <TripCard key={t.id} trip={t} index={i} onDelete={deleteTrip} onEdit={editTrip} />
           ))}
         </div>
       </Section>
@@ -68,7 +70,7 @@ const Index = () => {
       >
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {planned.map((t, i) => (
-            <TripCard key={t.id} trip={t} index={i} />
+            <TripCard key={t.id} trip={t} index={i} onDelete={deleteTrip} onEdit={editTrip} />
           ))}
         </div>
       </Section>
